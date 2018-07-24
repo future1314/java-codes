@@ -1,7 +1,7 @@
 package creational;
 
 /**
- * Created by 李恒名 on 2017/7/16.
+ * Created by  on 2017/7/16.
  * <p>
  * 原型模式，即通过一个实例的原型来复制（克隆）出类似的实例，而不是去重新创建，这有
  * 点像克隆人。如果你使用过 Javascript ，你应该对 Prototype 很熟悉。

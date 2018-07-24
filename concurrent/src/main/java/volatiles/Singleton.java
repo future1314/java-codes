@@ -1,13 +1,13 @@
 package volatiles;
 
 /**
- * Created by 李恒名 on 2017/6/15.
+ * Created by  on 2017/6/15.
  */
 public class Singleton {
     private volatile static Singleton instance;
 
     private Singleton() {
-        new AssertionError("don't support reflect.");
+        new AssertionError("don't support reflect.");//
     }
 
     public static Singleton getInstance() {
@@ -19,6 +19,10 @@ public class Singleton {
             }
         }
         return instance;
+    }
+
+    public static void main(String[] args) {
+
     }
 }
 

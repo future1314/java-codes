@@ -7,7 +7,7 @@ import java.lang.reflect.Constructor;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * Created by 李恒名 on 2017/6/20.
+ * Created by  on 2017/6/20.
  */
 public class CustomAtomicInteger {
     private volatile int value;

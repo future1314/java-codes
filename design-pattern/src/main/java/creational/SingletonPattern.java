@@ -5,7 +5,7 @@ import org.junit.Assert;
 import java.util.Objects;
 
 /**
- * Created by 李恒名 on 2017/7/15.
+ * Created by  on 2017/7/15.
  * <p>
  * 单例模式，即一个类只允许存在一个实例。
  *

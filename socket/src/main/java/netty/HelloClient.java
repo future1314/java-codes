@@ -8,7 +8,7 @@ import java.net.InetSocketAddress;
 import java.util.concurrent.Executors;
 
 /**
- * Created by 李恒名 on 2017/8/8.
+ * Created by  on 2017/8/8.
  */
 public class HelloClient {
     public static void main(String args[]) {

@@ -42,10 +42,14 @@ public class CustomClassLoader extends ClassLoader {
     public static void main(String[] args) throws ReflectiveOperationException{
         //1. 将Test.java 编译为Test.class 后复制到 E:\classes 下，当然也可以选择其他目录作为类加载器的classpath。
         //2. 加载
-        ClassLoader classLoader = new CustomClassLoader("E:\\classes\\");
+        //ClassLoader classLoader = new CustomClassLoader("E:\\classes\\");
+        ClassLoader classLoader = new CustomClassLoader("/Users/spring/classes");
         Class<?> clazz = classLoader.loadClass("Test");//如果你的Test在一个包内，需要加上包名，如x.y.z.Test
         //3. 通过反射调用say()方法
+        System.out.println(classLoader.getClass().getName());
+        System.out.println(classLoader.getClass().getClassLoader());
         Object instance = clazz.newInstance();
+        System.out.println(instance.getClass().getClassLoader());///???
         Method method = clazz.getMethod("say", null);
         method.invoke(instance);//Hello
     }

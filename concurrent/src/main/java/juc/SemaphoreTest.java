@@ -4,7 +4,7 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by 李恒名 on 2017/6/18.
+ * Created by  on 2017/6/18.
  */
 public class SemaphoreTest {
     public static void main(String[] args) {

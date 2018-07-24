@@ -1,7 +1,7 @@
 package data.structure.queue;
 
 /**
- * Created by 李恒名 on 2017/6/23.
+ * Created by  on 2017/6/23.
  * <p>
  * 保存指向首尾节点的指针，每次从链表尾插入，从链表头删除。
  */

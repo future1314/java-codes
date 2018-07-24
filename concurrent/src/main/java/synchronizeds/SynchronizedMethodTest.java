@@ -1,7 +1,7 @@
 package synchronizeds;
 
 /**
- * Created by 李恒名 on 2017/6/14.
+ * Created by  on 2017/6/14.
  * <p>
  * 同步成员方法
  */

@@ -1,7 +1,7 @@
 package unsafe;
 
 /**
- * Created by 李恒名 on 2017/6/21.
+ * Created by  on 2017/6/21.
  */
 public class TestClass {
     private int value;// 没有初始化

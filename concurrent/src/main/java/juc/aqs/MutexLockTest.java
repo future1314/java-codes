@@ -1,7 +1,7 @@
 package juc.aqs;
 
 /**
- * Created by 李恒名 on 2017/6/22.
+ * Created by  on 2017/6/22.
  */
 public class MutexLockTest {
     public static void main(String[] args) {

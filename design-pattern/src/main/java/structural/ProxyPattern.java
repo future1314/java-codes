@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by 李恒名 on 2017/7/19.
+ * Created by  on 2017/7/19.
  * <p>
  * 代理模式，为目标对象创建一个代理对象，其他对象可以通过代理对象来访问目标对象的方法，AOP、拦截器均为该模式的实践。
  *

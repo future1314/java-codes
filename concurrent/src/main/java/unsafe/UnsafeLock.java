@@ -5,7 +5,7 @@ import sun.misc.Unsafe;
 import java.lang.reflect.Constructor;
 
 /**
- * Created by 李恒名 on 2017/6/21.
+ * Created by  on 2017/6/21.
  */
 public class UnsafeLock {
     private Unsafe unsafe;

@@ -5,7 +5,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.RecursiveTask;
 
 /**
- * Created by 李恒名 on 2017/6/19.
+ * Created by  on 2017/6/19.
  */
 public class ForkJoinTest {
 

@@ -4,7 +4,7 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
 /**
- * Created by 李恒名 on 2017/6/18.
+ * Created by  on 2017/6/18.
  */
 public class CyclicBarrierTest {
     //定义一个barrier并设置parties，当线程数达到parties后，barrier失效，线程可以继续运行，在未达到parties值之前，线程将持续等待。

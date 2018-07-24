@@ -7,7 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * Created by 李恒名 on 2017/6/8.
+ * Created by  on 2017/6/8.
  *
  * 一个Socket入门小例子，将客户端的输入返回给客户端，支持多客户端连接。
  */

@@ -3,7 +3,7 @@ package arithmetic;
 import java.util.Arrays;
 
 /**
- * Created by 李恒名 on 2017/6/15.
+ * Created by  on 2017/6/15.
  * <p>
  * 堆排序,对简单选择排序的优化。
  * 1. 将序列构建成大顶堆。

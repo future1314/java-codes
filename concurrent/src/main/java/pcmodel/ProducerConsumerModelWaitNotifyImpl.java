@@ -6,7 +6,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * Created by 李恒名 on 2017/6/19.
+ * Created by  on 2017/6/19.
  *
  * 生产者-消费者模型的 Object.wait()、notify()实现
  */

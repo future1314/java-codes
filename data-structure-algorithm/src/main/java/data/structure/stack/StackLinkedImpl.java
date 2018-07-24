@@ -1,7 +1,7 @@
 package data.structure.stack;
 
 /**
- * Created by 李恒名 on 2017/6/8.
+ * Created by  on 2017/6/8.
  *
  */
 public class StackLinkedImpl implements Stack {

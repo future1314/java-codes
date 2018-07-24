@@ -3,7 +3,7 @@ package arithmetic;
 import java.util.Arrays;
 
 /**
- * Created by 李恒名 on 2017/6/15.
+ * Created by  on 2017/6/15.
  */
 public class QuickSort {
 

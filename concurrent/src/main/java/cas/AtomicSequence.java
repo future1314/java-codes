@@ -3,7 +3,7 @@ package cas;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Created by 李恒名 on 2017/6/20.
+ * Created by  on 2017/6/20.
  */
 public class AtomicSequence {
     private AtomicInteger value = new AtomicInteger();

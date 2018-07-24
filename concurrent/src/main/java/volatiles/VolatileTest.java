@@ -1,7 +1,7 @@
 package volatiles;
 
 /**
- * Created by 李恒名 on 2017/6/14.
+ * Created by  on 2017/6/14.
  */
 public class VolatileTest {
 

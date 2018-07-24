@@ -3,7 +3,7 @@ package thread;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by 李恒名 on 2017/8/29.
+ * Created by  on 2017/8/29.
  *
  *  死锁测试，线程1获得A锁（monitor）之后尝试获得B锁，线程2获得B锁后尝试获得A锁，线程1和线程2即产生死锁。
  */

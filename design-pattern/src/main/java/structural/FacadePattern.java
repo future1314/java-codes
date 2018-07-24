@@ -1,7 +1,7 @@
 package structural;
 
 /**
- * Created by 李恒名 on 2017/7/17.
+ * Created by  on 2017/7/17.
  * <p>
  * 外观模式，也称门面模式，用于为一个复杂的系统提供一个统一、简单的访问入口
  */

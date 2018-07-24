@@ -3,7 +3,7 @@ package juc;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * Created by 李恒名 on 2017/6/18.
+ * Created by  on 2017/6/18.
  */
 public class CountDownLatchTest {
     static CountDownLatch latch = new CountDownLatch(3);//创建计数器并设置初始值为3

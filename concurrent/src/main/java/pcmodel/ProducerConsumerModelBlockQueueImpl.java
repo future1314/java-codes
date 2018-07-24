@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
- * Created by 李恒名 on 2017/6/19.
+ * Created by  on 2017/6/19.
  * <p>
  * 生产者-消费者模型的阻塞队列实现
  */

@@ -1,7 +1,7 @@
 package creational;
 
 /**
- * Created by 李恒名 on 2017/6/14.
+ * Created by  on 2017/6/14.
  * <p>
  * 静态工厂方法模式，准确来讲这并不是一种设计模式，只是为了简化创建对象的过程。
  * 这种创建对象形式很常见，比如 Guava 中的 Lists 、Maps 等。

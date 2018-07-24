@@ -1,7 +1,7 @@
 package structural;
 
 /**
- * Created by 李恒名 on 2017/7/27.
+ * Created by  on 2017/7/27.
  * <p>
  * 装饰者模式
  *

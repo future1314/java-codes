@@ -3,7 +3,7 @@ package structural;
 import org.junit.Test;
 
 /**
- * Created by 李恒名 on 2017/7/27.
+ * Created by  on 2017/7/27.
  * <p>
  * 适配器模式，用于将一个类的接口转换成客户端所期待的另一种接口。
  */

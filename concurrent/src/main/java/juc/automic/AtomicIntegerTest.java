@@ -5,7 +5,7 @@ import org.junit.Assert;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Created by 李恒名 on 2017/6/18.
+ * Created by  on 2017/6/18.
  */
 public class AtomicIntegerTest {
 

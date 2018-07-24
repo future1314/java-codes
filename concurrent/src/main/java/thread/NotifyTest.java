@@ -1,7 +1,7 @@
 package thread;
 
 /**
- * Created by 李恒名 on 2017/6/16.
+ * Created by  on 2017/6/16.
  */
 public class NotifyTest {
 

@@ -3,7 +3,7 @@ package juc;
 import java.util.concurrent.*;
 
 /**
- * Created by 李恒名 on 2017/6/18.
+ * Created by  on 2017/6/18.
  */
 public class ExecutorTest {
     public static void main(String[] args) {

@@ -6,7 +6,7 @@ import static rpc.SimpleRpcFramework.export;
 import static rpc.SimpleRpcFramework.use;
 
 /**
- * Created by 李恒名 on 2017/8/17.
+ * Created by  on 2017/8/17.
  */
 public class RpcTest {
     private static final String HOST = "localhost";

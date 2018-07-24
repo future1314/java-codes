@@ -5,7 +5,7 @@ import org.junit.Assert;
 import java.util.Arrays;
 
 /**
- * Created by 李恒名 on 2017/6/23.
+ * Created by  on 2017/6/23.
  */
 public class BinarySearch {
 
