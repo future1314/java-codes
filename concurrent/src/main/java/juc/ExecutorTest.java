@@ -8,14 +8,16 @@ import java.util.concurrent.*;
 public class ExecutorTest {
     public static void main(String[] args) {
         //创建固定线程数的线程池
-        ExecutorService es = Executors.newFixedThreadPool(2);
+        ExecutorService es = Executors.newFixedThreadPool(2);////
         //执行传统Runnable任务
         es.execute(new RunnableTask());
         //执行Callable任务并获得任务结果Future
+        System.out.println("put time：" + System.currentTimeMillis());
         Future future = es.submit(new CallableTask());
         try {
+            System.out.println("get time：" + System.currentTimeMillis());
             System.out.println("Calculate Completed Sum：" + future.get());
-        } catch (InterruptedException | ExecutionException e) {
+        } catch (InterruptedException | ExecutionException e) {//
             e.printStackTrace();
         }
         //关键线程池

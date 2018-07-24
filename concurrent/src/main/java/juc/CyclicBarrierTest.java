@@ -8,7 +8,7 @@ import java.util.concurrent.CyclicBarrier;
  */
 public class CyclicBarrierTest {
     //定义一个barrier并设置parties，当线程数达到parties后，barrier失效，线程可以继续运行，在未达到parties值之前，线程将持续等待。
-    static CyclicBarrier barrier = new CyclicBarrier(3,()-> System.out.println("栅栏：“这么多猪，我恐怕扛不住了”"));
+    static CyclicBarrier barrier = new CyclicBarrier(3,()-> System.out.println("小猪[" + Thread.currentThread().getName() + "]：“猪多力量大，栅栏恐怕扛不住了，哇卡卡”"));
 
     static void go() {
         System.out.println("小猪[" + Thread.currentThread().getName() + "] 在栅栏边等待其他小猪");
@@ -26,6 +26,8 @@ public class CyclicBarrierTest {
 
         new Thread(() -> go()).start();
         new Thread(() -> go()).start();
+        try{Thread.sleep(3000);}
+        catch(Exception e){e.printStackTrace();}
         new Thread(() -> go()).start();
 
         /**

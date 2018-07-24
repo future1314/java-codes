@@ -9,6 +9,9 @@ public class CountDownLatchTest {
     static CountDownLatch latch = new CountDownLatch(3);//创建计数器并设置初始值为3
 
     static void work() {
+        System.out.println(Thread.currentThread().getName() + " Work Start");
+        try{Thread.sleep(3000);}
+        catch(Exception e){e.printStackTrace();}
         System.out.println(Thread.currentThread().getName() + " Work End");
         latch.countDown();//计数器值-1
     }
