@@ -18,7 +18,7 @@ public class ProducerConsumerModelWaitNotifyImpl {
         es.execute(new Producer(buffer));
         es.execute(new Producer(buffer));
         //三个消费者
-        Consumer consumer = new Consumer(buffer);
+//        Consumer consumer = new Consumer(buffer);
         es.execute(new Consumer(buffer));
         es.execute(new Consumer(buffer));
         es.execute(new Consumer(buffer));
@@ -69,7 +69,7 @@ public class ProducerConsumerModelWaitNotifyImpl {
 
         public void run() {
             while (true) {
-                synchronized (buffer) {
+                synchronized (buffer) {///基本上10 个 10个的生产和消费。去掉同步 报错。。。。
                     while (buffer.size() >= maxSize) {
                         try {
                             buffer.wait();//将当前线程放入等锁(buffer对象的锁)池，并释放锁。
@@ -86,7 +86,7 @@ public class ProducerConsumerModelWaitNotifyImpl {
                     Product product = new Product("iPhone 手机");
                     buffer.add(product);
                     System.out.println("生产者[" + Thread.currentThread().getName() + "]生产了一个产品：" + product);
-                    buffer.notifyAll();//生产完毕通知等待池内的其他线程(生产者或消费者都有可能)
+                    buffer.notifyAll();//生产完毕通知等待池内的其他线程(生产者或消费者都有可能)//
                 }
             }
         }
@@ -105,13 +105,13 @@ public class ProducerConsumerModelWaitNotifyImpl {
                 synchronized (buffer) {
                     while (buffer.isEmpty()) {
                         try {
-                            buffer.wait();
+                            buffer.wait();//
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
                     }
                     System.out.println("消费者[" + Thread.currentThread().getName() + "]消费了一个产品：" + buffer.remove(0));
-                    buffer.notifyAll();//消费完毕通知等待池内的其他线程(生产者或消费者都有可能)
+                    buffer.notifyAll();//消费完毕通知等待池内的其他线程(生产者或消费者都有可能)//
                 }
             }
         }

@@ -67,7 +67,8 @@ public class ProducerConsumerModelBlockQueueImpl {
             while (true) {
                 Product product = new Product("MAC");
                 try {
-                    buffer.put(product);
+                    buffer.put(product);//
+                    System.out.println("生产者[" + Thread.currentThread().getName() + "]--------产品：" + buffer.size());
                     System.out.println("生产者[" + Thread.currentThread().getName() + "]生产了一个产品：" + product);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -87,7 +88,8 @@ public class ProducerConsumerModelBlockQueueImpl {
         public void run() {
             while (true) {
                 try {
-                    System.out.println("消费者[" + Thread.currentThread().getName() + "]消费了一个产品：" + buffer.take());
+                    System.out.println("消费者[" + Thread.currentThread().getName() + "]--------产品：" + buffer.size());//
+                    System.out.println("消费者[" + Thread.currentThread().getName() + "]消费了一个产品：" + buffer.take());//
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
