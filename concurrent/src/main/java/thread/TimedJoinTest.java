@@ -17,6 +17,7 @@ public class TimedJoinTest {
         });
         thread.start();
         thread.join(100);//合并到主线程，主线程将等待该子线程执行完毕才会执行，只等待100毫秒，过时不在等。
+//        thread.join();//合并到主线程，主线程将等待该子线程执行完毕才会执行，主线程一直等。
 
         System.out.println("Main Thread Work End");
 

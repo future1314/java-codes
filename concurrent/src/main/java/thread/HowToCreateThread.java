@@ -41,7 +41,7 @@ public class HowToCreateThread {
 
     public static void method3() {
         //实现 java.util.concurrent.Callable
-        class Task implements Callable {
+        class Task implements Callable {//线程组。。
 
             @Override
             public Object call() throws Exception {
@@ -51,7 +51,7 @@ public class HowToCreateThread {
             }
         }
 
-        ExecutorService es = Executors.newFixedThreadPool(1);
+        ExecutorService es = Executors.newFixedThreadPool(1);//sigle 与 单线程的区别。
         Future future = es.submit(new Task());
         try {
             System.out.println("Calculate Completed Sum：" + future.get());

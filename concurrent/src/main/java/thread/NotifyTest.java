@@ -5,8 +5,9 @@ package thread;
  */
 public class NotifyTest {
 
-    public synchronized void work() {
+    public synchronized void work() {//synchronized
         System.out.println("Begin Work");
+        System.out.println("Begin time"+System.currentTimeMillis());
         try {
             //等待唤醒
             wait();
@@ -14,6 +15,7 @@ public class NotifyTest {
             e.printStackTrace();
         }
         System.out.println("Work End");
+        System.out.println("End   time"+System.currentTimeMillis());
     }
 
     public synchronized void continueWork() {
@@ -26,6 +28,6 @@ public class NotifyTest {
 
         //等待3000毫秒后唤醒，继续工作。
         Thread.sleep(3000);
-        test.continueWork();
+//      test.continueWork();//注释调则 一直不唤醒。
     }
 }

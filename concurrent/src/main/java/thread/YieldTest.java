@@ -8,6 +8,10 @@ public class YieldTest {
     public  void work(){
         for (int i = 0; i < 3; i++) {
             System.out.println(Thread.currentThread().getName() + " Working");
+            try{Thread.sleep(1000);}
+            catch(Exception e){
+                e.printStackTrace();
+            }
             Thread.yield();
         }
     }
@@ -17,6 +21,7 @@ public class YieldTest {
         YieldTest test = new YieldTest();
         new Thread(() -> test.work()).start();
         new Thread(() -> test.work()).start();
+        System.out.println(Thread.currentThread().getName() + " Working");
 
         /**
          输出：

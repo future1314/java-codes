@@ -14,7 +14,7 @@ public class InterruptTest {
 
         thread.start();
         //中断该线程
-        thread.interrupt();
+//        thread.interrupt();//没什么效果？
     }
 
 }
