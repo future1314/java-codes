@@ -5,7 +5,7 @@ package volatiles;
  */
 public class VolatileTest {
 
-    private /*volatile*/ int sharedValue = 0;
+    private volatile int sharedValue = 0;/////volatile
 
     public static void main(String[] args) throws InterruptedException {
         VolatileTest test = new VolatileTest();
@@ -37,8 +37,9 @@ public class VolatileTest {
         int localValue = sharedValue;
         while (sharedValue < 5) {
             if (localValue != sharedValue) {
-                System.out.println("Value Changed：" + sharedValue);
+                System.out.println("localValue Value before Change  ：" + localValue);
                 localValue = sharedValue;
+                System.out.println("localValue Value after Changed..：" + sharedValue);
             }
         }
     }
